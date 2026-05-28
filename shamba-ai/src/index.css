@@ -1,0 +1,68 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --bg-app:       #F2EDE0;
+  --bg-sidebar:   #DFF0C8;
+  --bg-card:      #FFFFFF;
+  --bg-header:    #2D5A0A;
+  --bg-input:     #FDFBF6;
+  --bg-chat:      #FAF7F0;
+  --bg-hover:     #C8DCA0;
+  --bg-amber:     #FDF3E0;
+  --bg-tag:       #C8DCA0;
+
+  --text-primary:   #162807;
+  --text-secondary: #3A5418;
+  --text-muted:     #5C7A38;
+  --text-hint:      #8FA860;
+  --text-on-green:  #D8EDBA;
+  --text-amber:     #7A4A08;
+
+  --border-strong:  #7AAE44;
+  --border-mid:     #A8CC70;
+  --border-subtle:  #CCDEA0;
+  --border-sidebar: #90BC50;
+
+  --green:          #3B6D11;
+  --green-dark:     #27500A;
+  --green-mid:      #5A8C1A;
+  --green-light:    #EAF3DE;
+  --amber:          #BA7517;
+  --amber-light:    #FDF3E0;
+  --rain-blue:      #2878B4;
+  --sun-gold:       #CC8010;
+
+  --r-sm:   6px;
+  --r-md:   10px;
+  --r-lg:   14px;
+  --r-pill: 999px;
+
+  --color-background-primary:   var(--bg-card);
+  --color-background-secondary: var(--bg-sidebar);
+  --color-background-tertiary:  var(--bg-app);
+  --color-text-primary:         var(--text-primary);
+  --color-text-secondary:       var(--text-secondary);
+  --color-text-tertiary:        var(--text-muted);
+  --color-border-tertiary:      var(--border-subtle);
+  --color-border-secondary:     var(--border-mid);
+  --color-border-primary:       var(--border-strong);
+  --border-radius-md:           var(--r-md);
+  --border-radius-lg:           var(--r-lg);
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Courier New', monospace;
+}
+
+html, body { margin: 0; padding: 0; height: 100%; background: var(--bg-app); }
+
+#root { height: 100vh; display: flex; flex-direction: column; font-family: var(--font-sans); }
+
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 4px; }
+
+textarea { font-family: inherit; }
+
+.quick-btn:hover:not(:disabled) {
+  background: var(--bg-hover) !important;
+  border-color: var(--border-strong) !important;
+}
